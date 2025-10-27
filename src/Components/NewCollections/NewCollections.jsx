@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [new_collection,setNew_collection]=useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:4000/newcollections')
+    fetch('https://ecommerce-fwczaqa5cwdrfsgc.eastasia-01.azurewebsites.net/newcollections')
     .then((response)=>response.json())
     .then((data)=>setNew_collection(data));
   },[])
