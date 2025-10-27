@@ -40,7 +40,7 @@ app.use('/images',express.static('upload/images'));
 app.post("/upload",upload.single('product'),(req,res)=>{
     res.json({
         success:1,
-        image_url:`http://localhost:${port}/images/${req.file.filename}`
+        image_url:`ecommerce-fwczaqa5cwdrfsgc.eastasia-01.azurewebsites.net/images/${req.file.filename}`
     })
 }) 
 
